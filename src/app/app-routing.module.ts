@@ -17,7 +17,8 @@ const routes: Routes = [
   },
   {
     path: 'article',
-    loadChildren: () => import('./article/article.module').then(m => m.ArticleModule)
+    loadChildren: () => import('./article/article.module').then(m => m.ArticleModule),
+    outlet: 'side-outlet'
   }
 ];
 
